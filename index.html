@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="primary-container">
+    <section class="rating-card">
+      <div class="rating-container">
+        <div class="icon-container">
+          <img src="./images/icon-star.svg" alt="Icon">
+        </div>
+        <h1 class="title">How did we do?</h1>
+        <p class="description">Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+        <div class="container">
+          <input id="rating" type="button" placeholder="1" name="rating" value="1">
+          <input id="rating" type="button" placeholder="2" name="rating" value="2">
+          <input id="rating" type="button" placeholder="3" name="rating" value="3">
+          <input id="rating" type="button" placeholder="4" name="rating" value="4">
+          <input id="rating" type="button" placeholder="5" name="rating" value="5">
+        </div>
+        <button class="submit-btn">Submit</button>
+      </div>
+      <div class="thanks hidden">
+        <img class="thanks-img" src="./images/illustration-thank-you.svg" alt="Thank You">
+          <div class="final-rating">
+            <!-- will need to show the input value -->
+           <span>You selected <span class="rating-value">0</span> out of 5</span>
+          </div>
+          <h2 class="title-secondary">Thank you!</h2>
+          <p class="thanks-message">We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!</p>
+      </div>
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">blkshp-alt</a>.
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
